@@ -1,24 +1,29 @@
 <template>
-  <div class="app min-h-screen justify-center items-center p-32">
-    <!-- header -->
-    <div class="rounded-lg p-6 text-center">
-      <h1 class="font-bold text-6xl text-white">
-        Shorten Your URL
-      </h1>
-    </div>
+  <div
+    class="bg-gradient-to-br from-purple-700 to-purple-900 min-h-screen flex justify-center items-center pb-32"
+  >
+    <div class="max-w-4xl mx-auto">
+      <!-- header -->
+      <div class="rounded-lg text-center">
+        <h1
+          class="font-bold text-6xl text-white italic uppercase tracking-widest"
+        >
+          Shorten Your URL
+        </h1>
+      </div>
 
-    <!-- form -->
-    <div class="mt-12 max-w-3xl mx-auto">
-      <form action="">
+      <!-- form -->
+      <form
+        action=""
+        class="flex items-center bg-black bg-opacity-25 rounded py-3 pr-4 pl-6"
+      >
         <input
           type="text"
-          class="w-full bg-transparent border-4 border-green-600 rounded-full p-6 mb-8 text-2xl"
+          class="w-full bg-transparent text-2xl outline-none"
           placeholder="https://shorten-this-url.com"
         />
         <div class="text-right">
-          <button
-            class="py-6 px-10 bg-green-500 text-green-200 rounded-full text-2xl"
-          >
+          <button class="py-3 px-10 bg-purple-100 rounded text-xl">
             Shorten
           </button>
         </div>
@@ -26,15 +31,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "App",
-};
-</script>
-
-<style>
-.app {
-  background: #000b48;
-}
-</style>
